@@ -1,6 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { FaRegCircleUser } from "react-icons/fa6";
 
 export default async function AuthButton() {
   const supabase = createClient();
@@ -20,8 +21,12 @@ export default async function AuthButton() {
   return user ? (
     <div className="flex items-center gap-4">
       Hey, {user.email}!
+      <button className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover">
+        Menu
+      </button>
       <form action={signOut}>
-        <button className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover">
+        <button className="flex text-base py-1.5 px-4 rounded-md gap-2 no-underline bg-btn-background hover:bg-btn-background-hover">
+          <FaRegCircleUser size={20}/>
           Logout
         </button>
       </form>
@@ -29,8 +34,9 @@ export default async function AuthButton() {
   ) : (
     <Link
       href="/login"
-      className="py-2 px-3 flex rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
+      className="flex items-center text-base py-1.5 px-3 rounded-md gap-2 no-underline bg-btn-background hover:bg-btn-background-hover"
     >
+      <FaRegCircleUser size={20}/>
       Login
     </Link>
   );
