@@ -34,7 +34,7 @@ const AuthButton = async () => {
   ) : (
     <Link
       href="/login"
-      className="flex items-center text-base py-1.5 px-3 rounded-md gap-3 no-underline border-white border-2 text-white  hover:bg-gray-700"
+      className="flex items-center text-base py-1.5 px-3 rounded-md gap-3 no-underline text-white hover:bg-gray-700"
     >
       <FaRegCircleUser size={20}/>
       My Account
