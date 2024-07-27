@@ -2,7 +2,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
-export default async function Index() {
+const Index = async () => {
 
 
   return (
@@ -13,3 +13,5 @@ export default async function Index() {
     </div>
   );
 }
+
+export default Index

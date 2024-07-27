@@ -3,7 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { FaRegCircleUser } from "react-icons/fa6";
 
-export default async function AuthButton() {
+const AuthButton = async () => {
   const supabase = createClient();
 
   const {
@@ -25,7 +25,7 @@ export default async function AuthButton() {
         Menu
       </button>
       <form action={signOut}>
-        <button className="flex text-base py-1.5 px-4 rounded-md gap-2 no-underline bg-btn-background hover:bg-btn-background-hover">
+        <button className="flex text-base py-1.5 px-4 rounded-md gap-3 no-underline bg-btn-background hover:bg-btn-background-hover">
           <FaRegCircleUser size={20}/>
           Logout
         </button>
@@ -34,10 +34,12 @@ export default async function AuthButton() {
   ) : (
     <Link
       href="/login"
-      className="flex items-center text-base py-1.5 px-3 rounded-md gap-2 no-underline bg-btn-background hover:bg-btn-background-hover"
+      className="flex items-center text-base py-1.5 px-3 rounded-md gap-3 no-underline border-white border-2 text-white  hover:bg-gray-700"
     >
       <FaRegCircleUser size={20}/>
-      Login
+      My Account
     </Link>
   );
 }
+
+export default AuthButton
