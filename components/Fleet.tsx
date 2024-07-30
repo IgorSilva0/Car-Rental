@@ -3,9 +3,9 @@
 const Fleet = () => {
 
     return (
-        <div className="flex flex-col items-center w-[100%]">
+        <div className="flex flex-col items-center">
             <h2 className="text-xl font-bold">Discover Our Fleet</h2>
-            <span>The Best Conditions for You to Book and Enjoy</span>
+            The Best Conditions for You to Book and Enjoy
         </div>
     )
 }

@@ -20,7 +20,7 @@ const RootLayout = ({
 }) => {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body className=" bg-slate-950 text-foreground text-white">
+      <body className=" bg-slate-900 text-foreground text-white">
         <main className="min-h-screen flex flex-col items-center">
           <Nav/>
           {children}

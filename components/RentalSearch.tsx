@@ -11,7 +11,7 @@ const RentalSearch = () => {
 
     return (
         <div className="pt-10">
-            <form className=" bg-slate-700 p-6 rounded-md">
+            <form className=" bg-slate-800 p-6 rounded-md">
                 <div className="flex text-lg gap-4 mb-5">
                     <label>
                         Pick-up & Return location
