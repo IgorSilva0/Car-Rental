@@ -10,8 +10,8 @@ const RentalSearch = () => {
     }
 
     return (
-        <div>
-            <form className=" bg-slate-700 p-5 rounded-md">
+        <div className="pt-10">
+            <form className=" bg-slate-700 p-6 rounded-md">
                 <div className="flex text-lg gap-4 mb-5">
                     <label>
                         Pick-up & Return location

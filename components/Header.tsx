@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import RentalSearch from "./RentalSearch";
+import Reviews from "./Reviews";
 
 const Header = () => {
   return (
@@ -13,25 +14,32 @@ const Header = () => {
           <li className="hover:underline underline-offset-4"><Link href={"/"}>Locations</Link></li>
           <li className="hover:underline underline-offset-4"><Link href={"/"}>Help</Link></li>
         </ul>
-        <div className="flex flex-col items-center justify-between h-full py-5">
-          <RentalSearch/> 
-          <ul className="flex items-center w-[70vw]">
+        <div className="flex flex-col items-center justify-between h-full">
+          <RentalSearch/>
+          <Reviews/>
+          <ul className="flex items-center w-[100%] px-[15%] py-2 bg-gradient-to-r from-transparent via-black to-transparent">
             <li className="flex">
-              <Image src={'/imgs/calendar.png'} alt="Calendar Image" width={70} height={70}/>
+              <div className="flex items-center px-1">
+                <Image src={'/imgs/calendar.png'} alt="Calendar Image" width={80} height={80} className=""/>
+              </div>
               <span>
                 <p className="font-bold">Flexible rentals</p>
                 Flexible rentals Cancel or change most bookings for free up to 48 hours before pick-up
               </span>
             </li>
             <li className="flex">
-              <Image src={'/imgs/magnifier.png'} alt="Calendar Image" width={70} height={70}/>
+              <div className="flex items-center px-1">
+                <Image src={'/imgs/magnifier.png'} alt="Calendar Image" width={80} height={80}/>
+              </div>
               <span>
                 <p className="font-bold">No hidden fees</p>
                 No hidden fees Know exactly what you&apos;'re paying
               </span>
             </li>
             <li className="flex">
-              <Image src={'/imgs/wallet.png'} alt="Calendar Image" width={70} height={70}/>
+              <div className="flex items-center px-1">
+                <Image src={'/imgs/wallet.png'} alt="Calendar Image" width={80} height={80}/>
+              </div>
               <span>
                 <p className="font-bold">Price Match Guarantee</p>
                 Price Match Guarantee Found the same deal for less? We&apos;ll match the price.
