@@ -22,35 +22,14 @@ const Destinations = () => {
               }}
               navigation={true}
               modules={[Navigation]}
-              className="h-[30vh] w-full max-w-6xl hover:cursor-pointer" 
+              className="h-fit w-full max-w-6xl hover:cursor-pointer" 
             >
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 1
+              {places.map((data, key) => 
+                <SwiperSlide className=" items-center custom-clip-places">
+                  <img src={data.src} key={key} alt='Place image' className='h-52'/>
               </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 2
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 3
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 4
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 5
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 6
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 7
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 8
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 9
-              </SwiperSlide>
+              )}
+              
             </Swiper>
             <button className='mt-12 py-2 px-4 hover:bg-gray-700 border-2 border-green-500 font-semibold rounded-md'>See All Destinations</button>
         </div>
@@ -58,3 +37,69 @@ const Destinations = () => {
 }
 
 export default Destinations
+
+const places = [
+  {
+    src: '/imgs/places/bath-statue-in-front.jpg'
+  },
+  {
+    src: '/imgs/places/london-bridge.jpg'
+  },
+  {
+    src: '/imgs/places/cambridge-oxford.jpg'
+  },
+  {
+    src: '/imgs/places/canterbury.jpg'
+  },
+  {
+    src: '/imgs/places/cardiff.jpg'
+  },
+  {
+    src: '/imgs/places/edinburgh.jpg'
+  },
+  {
+    src: '/imgs/places/liverpool.jpg'
+  },
+  {
+    src: '/imgs/places/loch-ness-inverness.jpg'
+  },
+  {
+    src: '/imgs/places/london.jpg'
+  },
+  {
+    src: '/imgs/places/stonehenge-salisbury.jpg'
+  },
+  {
+    src: '/imgs/places/windsor.jpg'
+  },
+  {
+    src: '/imgs/places/bath-statue-in-front.jpg'
+  },
+  {
+    src: '/imgs/places/york.jpg'
+  },
+  {
+    src: '/imgs/places/northern-irelands-giants-causeway.jpg'
+  },
+  {
+    src: '/imgs/places/belfast.jpg'
+  },
+  {
+    src: '/imgs/places/glasgow-loch-lomond.jpg'
+  },
+  {
+    src: '/imgs/places/cotswolds.jpg'
+  },
+  {
+    src: '/imgs/places/lake-district.jpg'
+  },
+  {
+    src: '/imgs/places/football-mad-city.jpg'
+  },
+  {
+    src: '/imgs/places/wales-biggest-mountain.jpg'
+  },
+  {
+    src: '/imgs/places/the-channel-islands.jpg'
+  }
+]

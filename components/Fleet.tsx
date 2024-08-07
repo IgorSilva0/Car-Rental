@@ -27,7 +27,7 @@ const Fleet = () => {
             >
               {cars.map((data, key)=>
                 <SwiperSlide key={key} className="text-center text-lg text-black items-center">
-                  <Image src={data.src} alt='Car Image' width={100} height={100} className=' w-[80%] h-[80%] p-5 '/>
+                  <img src={data.src} alt='Car Image' className=' w-[100%] h-[100%]'/>
                 </SwiperSlide>
               )}
               

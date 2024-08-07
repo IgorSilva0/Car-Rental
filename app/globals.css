@@ -44,3 +44,12 @@
 .custom-clip {
   clip-path: polygon(15% 0px, 0% 100%, 85% 100%, 100% 0px);
 }
+
+.custom-clip-places {
+  clip-path: polygon(0% 20%, 100% 10%, 100% 90%, 0% 80%);
+  transition: clip-path 1s ease;
+}
+
+.custom-clip-places:hover {
+  clip-path: none;
+}
