@@ -2,6 +2,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
+import Image from 'next/image';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,37 +20,17 @@ const Fleet = () => {
               pagination={{
                 clickable: true,
               }}
+              loop={true}
               navigation={true}
               modules={[Navigation]}
               className="h-[30vh] w-full max-w-6xl" 
             >
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 1
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 2
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 3
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 4
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 5
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 6
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 7
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 8
-              </SwiperSlide>
-              <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
-                Slide 9
-              </SwiperSlide>
+              {cars.map((data, key)=>
+                <SwiperSlide key={key} className="text-center text-lg text-black items-center">
+                  <Image src={data.src} alt='Car Image' width={100} height={100} className=' w-[80%] h-[80%] p-5 '/>
+                </SwiperSlide>
+              )}
+              
             </Swiper>
             <button className='mt-12 py-2 px-4 hover:bg-gray-700 border-2 border-green-500 font-semibold rounded-md'>View All Car Groups</button>
         </div>
@@ -57,3 +38,55 @@ const Fleet = () => {
 };
 
 export default Fleet;
+
+
+const cars = [
+  { 
+    src: '/imgs/cars/discovery2020.png'
+  },
+  { 
+    src: '/imgs/cars/evoque2014.png'
+  },
+  { 
+    src: '/imgs/cars/evoqueconvert2017.png'
+  },
+  { 
+    src: '/imgs/cars/evoqueconvert2018.png'
+  },
+  { 
+    src: '/imgs/cars/rangerover2014.png'
+  },
+  { 
+    src: '/imgs/cars/sport2021.png'
+  },
+  { 
+    src: '/imgs/cars/sport2022.png'
+  },
+  { 
+    src: '/imgs/cars/velar2019.png'
+  },
+  { 
+    src: '/imgs/cars/velar2020.png'
+  },
+  { 
+    src: '/imgs/cars/velar2021.png'
+  },
+  { 
+    src: '/imgs/cars/velar2022.png'
+  },
+  { 
+    src: '/imgs/cars/velar2023.png'
+  },
+  { 
+    src: '/imgs/cars/velar20200.png'
+  },
+  { 
+    src: '/imgs/cars/sport2017.png'
+  },
+  { 
+    src: '/imgs/cars/discovery2018.png'
+  },
+  { 
+    src: '/imgs/cars/rangerover2016.png'
+  },
+]
