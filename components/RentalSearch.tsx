@@ -47,7 +47,7 @@ const RentalSearch = () => {
                     <input type="checkbox" onChange={handleDrop}/>
                     Drop car off at different location
                 </label>
-                <button type="submit" className="mx-5 px-10 py-1 w-fit bg-green-600 rounded-md hover:bg-green-700">Search</button>
+                <button type="submit" className="mx-5 px-10 py-1 w-fit bg-green-500 rounded-sm hover:bg-green-600 font-medium">Search</button>
             </form>
         </div>
     )

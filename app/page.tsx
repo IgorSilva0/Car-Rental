@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Fleet from "@/components/Fleet";
 import Image from "next/image";
 import { SlPlane } from "react-icons/sl";
+import Destinations from "@/components/Destinations";
 
 const Index = async () => {
 
@@ -21,13 +22,14 @@ const Index = async () => {
             <p><b>Trust us</b>, we&apos;ve got exclusive tips to help you find your way.</p>
           </div>
         </div>
-
-        <div className="flex">
-          <Image src={'/imgs/secret.jpg'} alt="Secret Image" width={400} height={400}/>
-          <button>Hello</button>
+        <div className="flex items-center relative">
+          <div className="flex custom-clip">
+            <Image src={'/imgs/secret.jpg'} alt="Secret Image" width={400} height={400} className=""/>
+          </div>
+          <button className="bg-green-500 hover:bg-green-600 py-2 px-5 rounded-sm font-medium absolute -right-16">DISCOVER</button>
         </div>
-
       </div>
+      <Destinations/>
     </div>
   );
 }

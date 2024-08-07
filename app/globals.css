@@ -40,3 +40,7 @@
     transform: translateY(0);
   }
 }
+
+.custom-clip {
+  clip-path: polygon(15% 0px, 0% 100%, 85% 100%, 100% 0px);
+}

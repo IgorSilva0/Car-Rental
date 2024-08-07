@@ -8,20 +8,21 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-const Fleet = () => {
-    return (
-        <div className="flex flex-col items-center h-fit w-full">
-            <h2 className="text-2xl font-bold mt-10 mb-4">Discover Our Fleet</h2>
-            <p className="mb-16">The Best Conditions for You to Book and Enjoy</p>
+const Destinations = () => {
+
+    return(
+        <div className="flex flex-col items-center h-fit w-full mb-10">
+            <h2 className="text-2xl font-bold mt-10 mb-4">Destinations to Discover and Get Inspired</h2>
+            <p className="mb-16">More than just hiring cars, we look after your journey. Explore our travel tips to inspire your next adventure.</p>
             <Swiper
-              slidesPerView={3}
+              slidesPerView={5}
               spaceBetween={30}
               pagination={{
                 clickable: true,
               }}
               navigation={true}
               modules={[Navigation]}
-              className="h-[30vh] w-full max-w-6xl" 
+              className="h-[30vh] w-full max-w-6xl hover:cursor-pointer" 
             >
               <SwiperSlide className="text-center text-lg text-black flex justify-center items-center bg-white">
                 Slide 1
@@ -51,9 +52,9 @@ const Fleet = () => {
                 Slide 9
               </SwiperSlide>
             </Swiper>
-            <button className='mt-12 py-2 px-4 hover:bg-gray-700 border-2 border-green-500 font-semibold rounded-md'>View All Car Groups</button>
+            <button className='mt-12 py-2 px-4 hover:bg-gray-700 border-2 border-green-500 font-semibold rounded-md'>See All Destinations</button>
         </div>
-    );
-};
+    )
+}
 
-export default Fleet;
+export default Destinations
