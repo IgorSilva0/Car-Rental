@@ -23,11 +23,11 @@ const Fleet = () => {
               loop={true}
               navigation={true}
               modules={[Navigation]}
-              className="h-[30vh] w-full max-w-6xl" 
+              className="h-fit w-full max-w-6xl" 
             >
               {cars.map((data, key)=>
                 <SwiperSlide key={key} className="text-center text-lg text-black items-center">
-                  <img src={data.src} alt='Car Image' className=' w-[100%] h-[100%]'/>
+                  <img src={data.src} alt='Car Image' className=' w-[100%] h-[95%]'/>
                 </SwiperSlide>
               )}
               
@@ -41,8 +41,14 @@ export default Fleet;
 
 
 const cars = [
+  {
+    src: '/imgs/cars/defender.png'
+  },
   { 
     src: '/imgs/cars/discovery2020.png'
+  },
+  { 
+    src: '/imgs/cars/velar20200.png'
   },
   { 
     src: '/imgs/cars/evoque2014.png'
@@ -51,10 +57,16 @@ const cars = [
     src: '/imgs/cars/evoqueconvert2017.png'
   },
   { 
+    src: '/imgs/cars/velar2019.png'
+  },
+  { 
     src: '/imgs/cars/evoqueconvert2018.png'
   },
   { 
     src: '/imgs/cars/rangerover2014.png'
+  },
+  { 
+    src: '/imgs/cars/velar2023.png'
   },
   { 
     src: '/imgs/cars/sport2021.png'
@@ -63,30 +75,27 @@ const cars = [
     src: '/imgs/cars/sport2022.png'
   },
   { 
-    src: '/imgs/cars/velar2019.png'
-  },
-  { 
     src: '/imgs/cars/velar2020.png'
   },
   { 
     src: '/imgs/cars/velar2021.png'
   },
   { 
-    src: '/imgs/cars/velar2022.png'
-  },
-  { 
-    src: '/imgs/cars/velar2023.png'
-  },
-  { 
-    src: '/imgs/cars/velar20200.png'
-  },
-  { 
     src: '/imgs/cars/sport2017.png'
   },
   { 
-    src: '/imgs/cars/discovery2018.png'
+    src: '/imgs/cars/discoverysport2018.png'
   },
   { 
     src: '/imgs/cars/rangerover2016.png'
+  },
+  {
+    src: '/imgs/cars/defender1.png'
+  },
+  { 
+    src: '/imgs/cars/velar2022.png'
+  },
+  {
+    src: '/imgs/cars/defender2.png'
   },
 ]

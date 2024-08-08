@@ -25,8 +25,8 @@ const Destinations = () => {
               className="h-fit w-full max-w-6xl hover:cursor-pointer" 
             >
               {places.map((data, key) => 
-                <SwiperSlide className=" items-center custom-clip-places">
-                  <img src={data.src} key={key} alt='Place image' className='h-52'/>
+                <SwiperSlide  key={key} className=" items-center custom-clip-places">
+                  <img src={data.src} alt='Place image' className='h-52'/>
               </SwiperSlide>
               )}
               
