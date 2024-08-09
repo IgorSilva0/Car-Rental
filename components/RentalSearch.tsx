@@ -15,10 +15,10 @@ const RentalSearch = () => {
                 <div className="flex text-lg gap-4 mb-5">
                     <label>
                         Pick-up & Return location
-                        <input className="block text-black h-[30px]" placeholder="Pick-up location" type="text">
+                        <input className="block text-black h-[30px] placeholder-black" placeholder="Pick-up location" type="text">
                         </input>
                         {sameLocation ? 
-                            <input className="block text-black mt-4" placeholder="Drop-off location" type="text">
+                            <input className="block text-black mt-4 placeholder-black" placeholder="Drop-off location" type="text">
                             </input>
                         : null}
                     </label>
