@@ -10,9 +10,9 @@ const RentalSearch = () => {
     }
 
     return (
-        <div className="pt-10">
+        <div className="pt-10 mobile:pt-5">
             <form className=" bg-slate-800 p-6 rounded-md">
-                <div className="flex text-lg gap-4 mb-5">
+                <div className="flex text-lg gap-4 mb-5 mobile:flex-col">
                     <label>
                         Pick-up & Return location
                         <input className="block text-black h-[30px] placeholder-black" placeholder="Pick-up location" type="text">
@@ -47,7 +47,7 @@ const RentalSearch = () => {
                     <input type="checkbox" onChange={handleDrop}/>
                     Drop car off at different location
                 </label>
-                <button type="submit" className="mx-5 px-10 py-1 w-fit bg-green-500 rounded-sm hover:bg-green-600 font-medium">Search</button>
+                <button type="submit" className="mobile:mx-0 mobile:mt-5 mx-5 px-10 py-1 w-fit bg-green-500 rounded-sm hover:bg-green-600 font-medium">Search</button>
             </form>
         </div>
     )

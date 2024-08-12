@@ -5,9 +5,9 @@ import Reviews from "./Reviews";
 
 const Header = () => {
   return (
-    <div className="flex flex-1 px-16">
-      <div className="flex flex-col items-center bg-[url('/imgs/bg.jpeg')] h-[80vh] bg-cover bg-no-repeat bg-center">
-        <ul className="flex w-full max-w-2xl justify-between mt-3 ">
+    <div className="flex flex-1 px-16 mobile:px-0">
+      <div className="flex flex-col items-center bg-[url('/imgs/bg.jpeg')] h-[80vh] bg-cover bg-no-repeat bg-center mobile:w-[100vw] mobile:px-5">
+        <ul className="flex w-full max-w-2xl justify-between mt-3 mobile:mt-5">
           <li className="hover:underline underline-offset-4"><Link href={"/"}>Car Hire</Link></li>
           <li className="hover:underline underline-offset-4"><Link href={"/"}>Van Hire</Link></li>
           <li className="hover:underline underline-offset-4"><Link href={"/"}>Our Deals</Link></li>
@@ -17,7 +17,7 @@ const Header = () => {
         <div className="flex flex-col items-center justify-between h-full">
           <RentalSearch/>
           <Reviews/>
-          <ul className="flex items-center w-[100%] px-[15%] py-2 bg-slate-950">
+          <ul className="flex items-center w-[100%] px-[15%] py-2 bg-slate-950 mobile:flex-col mobile:gap-5">
             <li className="flex">
               <div className="flex items-center px-1">
                 <Image src={'/imgs/calendar.png'} alt="Calendar Image" width={80} height={80} className=""/>
