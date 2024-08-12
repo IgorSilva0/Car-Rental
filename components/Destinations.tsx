@@ -11,11 +11,11 @@ import 'swiper/css/navigation';
 const Destinations = () => {
 
     return(
-        <div className="flex flex-col items-center h-fit w-full mb-10">
+        <div className="flex flex-col items-center h-fit w-full mb-10  mobile:px-5">
             <h2 className="text-2xl font-bold mt-10 mb-4">Destinations to Discover and Get Inspired</h2>
             <p className="mb-16">More than just hiring cars, we look after your journey. Explore our travel tips to inspire your next adventure.</p>
             <Swiper
-              slidesPerView={5}
+              slidesPerView={3}
               spaceBetween={30}
               pagination={{
                 clickable: true,
@@ -26,7 +26,7 @@ const Destinations = () => {
             >
               {places.map((data, key) => 
                 <SwiperSlide  key={key} className=" items-center custom-clip-places">
-                  <img src={data.src} alt='Place image' className='h-52'/>
+                  <img src={data.src} alt='Place image' className='h-52 mobile:h-40'/>
               </SwiperSlide>
               )}
               

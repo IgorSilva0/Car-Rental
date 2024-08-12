@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 
 const Fleet = () => {
     return (
-        <div className="flex flex-col items-center h-fit w-full">
+        <div className="flex flex-col items-center h-fit w-full mobile:px-4">
             <h2 className="text-2xl font-bold mt-10 mb-4">Discover Our Fleet</h2>
             <p className="mb-16">The Best Conditions for You to Book and Enjoy</p>
             <Swiper

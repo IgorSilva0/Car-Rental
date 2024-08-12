@@ -3,7 +3,7 @@ import Image from "next/image"
 const Reviews = () => {
 
     return (
-        <div className="flex flex-col items-center gap-5 bg-slate-900 p-5 rounded-md shadow-lg">
+        <div className="flex flex-col items-center gap-5 bg-slate-900 p-5 rounded-md shadow-lg mobile:hidden">
             <h2 className=" bg-white text-black py-1 px-3 rounded-md font-bold">Over 100,000 reviews and counting…</h2>
             <p>"Quick, efficient and effective service"</p>
             <Image src={'/imgs/feefo.png'} alt="Feefo image" width={150} height={50}/>
